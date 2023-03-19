@@ -1,9 +1,8 @@
 import React from "react"
-import { Button } from "@arco-design/web-react"
-import "@arco-design/web-react/dist/css/arco.css"
+import { useRoutes } from "react-router-dom"
+import routes from "./router"
 
-const App = () => {
-  return <Button type="primary">按钮</Button>
+export default function App() {
+  const views = useRoutes(routes)
+  return <div>{views}</div>
 }
-
-export default App
