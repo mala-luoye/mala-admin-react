@@ -24,7 +24,7 @@ export default function LoginBoxForm() {
           />
         </FormItem>
         <FormItem field="password" rules={[{ required: true }]}>
-          <Input
+          <Input.Password
             placeholder="密码"
             prefix={<IconLock />}
             style={{ width: 320 }}
