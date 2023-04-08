@@ -5,5 +5,5 @@ import { useTokenStatus } from "@/hooks"
 export default function App() {
   useTokenStatus()
   const views = useRoutes(routes)
-  return <div>{views}</div>
+  return <div className="app">{views}</div>
 }
